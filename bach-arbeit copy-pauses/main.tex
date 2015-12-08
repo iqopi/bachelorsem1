@@ -1,4 +1,4 @@
-%// !TEX program = luatex
+%!TEX program = luatex
 % luatex %.tex|"yourPDFreaderProgramExecutable" %.pdf
 \documentclass[11pt]{beamer}
 \usepackage{csquotes}
@@ -58,7 +58,7 @@ note = {Zugegriffen: *Datum*},
 	($\mathbb{K}$ ist $\mathbb{R}$ oder $\mathbb{C}$) bilden mit der Operation
 	$(A,B) \mapsto AB$ eine Gruppe. \pause
 	\begin{enumerate}[label = $(\roman*)$]
-	\item $GL_n(\mathbb{K}) := \{A \in M_n(\mathbb{K}): \det(A) \neq 0 \}$ \\[0.5em] \pause 
+	\item $GL_n(\mathbb{K}) := \{A \in M_n(\mathbb{K}): \det(A) \neq 0 \}$ \\[0.5em] \pause
 
 	\item $SL_n(\mathbb{K}) := \{A \in M_n(\mathbb{K}): \det(A) = 1 \}$ \\[0.5em]
 
@@ -74,17 +74,17 @@ note = {Zugegriffen: *Datum*},
 
 \begin{frame}
 	\frametitle{Motivation:}
-	Die $GL_n(\mathbb{K})$ sind offen in $M_n(\mathbb K)$. \\ [1em] \pause 
-	Die folgenden Operationen: 
+	Die $GL_n(\mathbb{K})$ sind offen in $M_n(\mathbb K)$. \\ [1em] \pause
+	Die folgenden Operationen:
 	\begin{enumerate}[label = $(\roman*)$]
 		\item $GL_n(\mathbb{K}) \times GL_n(\mathbb{K}) \to GL(\mathbb K)$ definiert durch $(A,B) \mapsto A\cdot B$ \pause
-		
+
 		\item $^{-1}:GL_n(\mathbb{K}) \rightarrow GL_n(\mathbb{K})$ defniniert durch: $A\mapsto A^{-1}$
 	\end{enumerate}
-	glatt. \pause 
+	glatt. \pause
 	Denn in den Einträgen der neuen Matrix stehen nur Polynome der
-	ursprünglichen. \\[1em] \pause 
-	Die $SU(2)$ ist isomorph zu $S^3 :=\{ x \in \mathbb{R}^4: \|x\|_2 = 1\}$. \pause 
+	ursprünglichen. \\[1em] \pause
+	Die $SU(2)$ ist isomorph zu $S^3 :=\{ x \in \mathbb{R}^4: \|x\|_2 = 1\}$. \pause
 	Denn, ist $A \in SU(2)$ so
 	$\exists \alpha, \beta \in \mathbb{C}$ sodass
 	$A = \left( \begin{matrix} \alpha & -\bar{\beta} \\ \beta  & \bar{\alpha}\end{matrix} \right)$
@@ -108,7 +108,7 @@ note = {Zugegriffen: *Datum*},
 	\textbf{Definition:}
 	Ist $G$ eine Matrixgruppe, so ist
 	\begin{align*}
-		\mathfrak{g} := \{ \alpha'(0): & \;\; \alpha:(-\varepsilon, \varepsilon) \rightarrow M_n(\mathbb{K}) \text{ glatt},\\ 							
+		\mathfrak{g} := \{ \alpha'(0): & \;\; \alpha:(-\varepsilon, \varepsilon) \rightarrow M_n(\mathbb{K}) \text{ glatt},\\
 										&\text{ mit } \alpha(0) = \mathbb{I}, \text{ und } \alpha((-\varepsilon, \varepsilon)) \subseteq G\} (*)
 	\end{align*}
   der Tangentialraum von $G$ bei $\mathbb{I}$.
@@ -121,7 +121,7 @@ note = {Zugegriffen: *Datum*},
 	Eine Einparmeterunteruppe ist ein einer Gruppe $G$ ist eine Abbildung:
 	$\alpha:\mathbb{K} \rightarrow G$, sodass $\forall s, t \in \mathbb{K}$ gilt
 	$\alpha(s+t) = \alpha(s)\cdot \alpha(t)$. \\[1em] \pause
-	
+
 	\textbf{Definition:}
 	Für $A \in M_n(\mathbb{K})$ ist $\exp: M_n(\mathbb K) \to GL_n(\mathbb K)$:
 	\begin{align*}
@@ -144,7 +144,7 @@ note = {Zugegriffen: *Datum*},
 
 	\textbf{Satz:}
 	Es existieren offene Umgebungen von $0\in V \subseteq M_n(\mathbb{K})$ und $\mathbb{I}\in U\subseteq M_n(\mathbb{K})$, sodass $X\mapsto e^X$ eine glatte Bijektion $V\to U$ ist und deren Inverse ebenfalls glatt ist.\\[1em] \pause
-	
+
 	\textbf{Beweis:}
 	Folgt aus dem Inverse Funktionen Satz da $(e^X)'\big\vert_{X=0} = \mathbb{I}$.
 \end{frame}
@@ -154,10 +154,10 @@ note = {Zugegriffen: *Datum*},
 	Sei $G\subseteq GL_n(\mathbb{K})$ eine Matrixgruppe, $\mathfrak{g}\subseteq M_n(\mathbb{K})$ wie oben, dann gilt \pause
 	\begin{enumerate}[label = $(\roman*)$]
 		\item $\mathfrak{g}$ ist ein Teilraum und $\mathfrak{g} = \{ X\in M_n(\mathbb{K}):\; \forall t:e^{tX}\in G \}$ \pause
-		
+
 		\item $\exists$ offene Umgebungen $V$ von 0 in $M_n(\mathbb{K})$, $U$ von $\mathbb{I}$ in $GL_n(\mathbb{K})$, sodass $\exp$ zusätzlich $V\cap \mathfrak{g}$ bijektiv auf $U\cap G$ abbildet. \pause
 	\end{enumerate}
-	
+
 	\textbf{Beweis:} $(i)$ Sind $\alpha$, $\beta$ Kurven die $(*)$ erfüllen und
 	$\gamma(t):= \alpha(t)\beta(t)$. Dann gilt: \pause
 	\begin{equation*}
@@ -179,46 +179,46 @@ note = {Zugegriffen: *Datum*},
 	Ist $\Phi, \varphi$ wie oben definiert, so gilt $\Phi(e^X) = e^{\varphi(X)}$.
 	Daraus folgt, dass $\Phi$ lokal um $\mathbb{I}$ eindeutig durch $\varphi$ bestimmt. \\[1em] \pause
 	\textbf{Beweis:}
-	$\Phi(e^{tX})$ ist eine Einparameteruntergruppe mit $(\Phi(e^{tX}))'\big\vert_{t=0} = \varphi((e^{tX})'\big\vert_{t=0}) = \varphi(X(e^{tX})\big\vert_{t=0}) = \varphi(X)$.	
+	$\Phi(e^{tX})$ ist eine Einparameteruntergruppe mit $(\Phi(e^{tX}))'\big\vert_{t=0} = \varphi((e^{tX})'\big\vert_{t=0}) = \varphi(X(e^{tX})\big\vert_{t=0}) = \varphi(X)$.
 \end{frame}
 
 
 \begin{frame}
 	\textbf{Propostion:}
-	Ist $H$ zusammenängend so ist die von $exp(\mathfrak{h})$ erzeugte Untergruppe isomorph zu $H$.\\ [1em] \pause 
+	Ist $H$ zusammenängend so ist die von $exp(\mathfrak{h})$ erzeugte Untergruppe isomorph zu $H$.\\ [1em] \pause
 	\textbf{Beweis:}
 	Die Teilmenge $U\cap H$ vom obigen Satz liegt in $\exp(\mathfrak h)$ und damit in der davon erzeugte Untergruppe $\tilde H\subset H$. \\ \pause
 	Analog liegt für $h\in\tilde H$ die Menge $hU\cap H$ in $\tilde H$ (wobei $hU = \{hg:g\in U\}$).
 	Nun ist aber nach Definition jede dieser Teilmengen offen in $H$,\pause
-	 also ist $\tilde H$ eine offene Teilmenge von $H$. 
+	 also ist $\tilde H$ eine offene Teilmenge von $H$.
 	Das Komplement von $\tilde H$ in $H$ ist aber eine Vereinigung von Nebenklassen, die jeweils
 	isomorph zu $\tilde H$, also ebenfalls offen. \pause
 	Somit ist $\tilde H$ auch abgeschlossen, und weil H
 	zusammenhängend ist, folgt $\tilde H=H$. \\[1em] \pause
-	
+
 	\textbf{Korrolar:}
 	Ist $\Phi:G \rightarrow H$ ein glatter Homomorphismus, $\varphi$ surjektiv
 	und $H$ zusammenängend dann ist $\Phi$ surjektiv. \\[1em]
 \end{frame}
 
 \begin{frame}
-	\textbf{Anwendung:} 
+	\textbf{Anwendung:}
 	Man beobachtet, dass $\mathfrak{su(2)} = \left\{ \left( \begin{matrix}
 	a  	& -b+ic\\
 	b+ic	& -ia
-	\end{matrix}\right): a,b,c \in \mathbb{R} \right\} \cong \mathbb{R}^3$ 
+	\end{matrix}\right): a,b,c \in \mathbb{R} \right\} \cong \mathbb{R}^3$
 	ist \pause
-	und 
-	$\langle X, Y \rangle:= -spur(XY)$ ein positiv definites Skalarprodukt auf $\mathfrak{su(2)}$\pause 
+	und
+	$\langle X, Y \rangle:= -spur(XY)$ ein positiv definites Skalarprodukt auf $\mathfrak{su(2)}$\pause
 	definiert.
 	Weiters gilt für $A\in SU(2)$, $X\in \mathfrak{su(2)}$, dass $AXA^{-1} \in \mathfrak{su(2)}$,\pause
-	 und 
+	 und
 	$Ad_A:\mathfrak{su(2)} \to \mathfrak{su(2)}$ definiert durch $Ad_A(X) := AXA^{-1}$ erhält das Skalarprodukt und ist deshalb orthogonal bzgl. $\langle \,\, , \, \rangle \Rightarrow Ad_A \in SO(3)$ ist. \\ \pause
-	
-	 
+
+
 	$\Phi: SU(2) \to SO(3)$, $\Phi(A) := Ad_A$ ist glatt und surjektiv, da die zugehörige Abbildung $\varphi$ bijektiv ist. \pause
 	Da $Ker(\Phi) = {\pm \mathbb{I}}$ ist, folgt dass $SO(3)$ isomorph zu $SU(2)/\{\pm\mathbb{I}\}$ ist.
-	
+
 \end{frame}
 
 \begin{frame}
@@ -229,18 +229,18 @@ note = {Zugegriffen: *Datum*},
 	Ist $\varphi$ wie in der obigen Propositon, und sind $X, Y \in \mathfrak{g}$ so gilt: \pause
 	\begin{enumerate}[label = $(\roman*)$]
 		\item $A\in G, X \in \mathfrak g \Rightarrow AXA^{-1} \in \mathfrak g$ \pause
-		
+
 		\item $X, Y \in \mathfrak g \Rightarrow [X,Y] \in \mathfrak g$ \pause
-		
+
 		\item $\forall X \in \mathfrak{g}, g\in G$ gilt $\varphi(gXg^{-1}) = \Phi(g) \varphi(X) \Phi(g)^{-1}$ \pause
-		
+
 		\item $\forall X, Y \in \mathfrak{g}$ gilt $\varphi([X,Y]) = [\varphi(X), \varphi(Y)]$ \pause
 	\end{enumerate}
-	
+
 	\textbf{Beweis:}
 	$(i)$ $X\in \mathfrak g \Rightarrow e^{tX}\in G\; \forall t \Rightarrow Ae^{tX}A^{-1} \in G$ ist Einparameteruntergruppe, mit Ableitung $AXA^{-1} \Rightarrow AXA^{-1} \in \mathfrak g$ \\[1em]\pause
 	$(ii)$ Aus $(i)$ folgt: $e^{tX}Ye^{-tX} \in \mathfrak g\; \forall t \Rightarrow [X,Y] \in \mathfrak g$
-	
+
 \end{frame}
 
 \begin{frame}
