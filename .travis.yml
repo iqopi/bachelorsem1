@@ -1,7 +1,5 @@
 script:
-  - sudo apt-get update && sudo apt get install texlive-recommended texlive-lang-german texlive-latex-extra latexmk
-
-
+  - sudo apt-get update && sudo apt get install texlive-recommended texlive-lang-german texlive-latex-extra texlive-polyglossia biber latexmk
 
 before_install:
 - "sudo apt-get update && sudo apt-get install texlive texlive-luatex texlive-lang-german texlive-latex-extra latexmk"
