@@ -1,5 +1,5 @@
 before_install:
-- "sudo apt-get update && sudo apt-get install texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended biber latexmk"
+- "sudo apt-get update && sudo apt-get install texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended latexmk"
 
 script:
 - cd bach-arbeit\ copy-pauses/
