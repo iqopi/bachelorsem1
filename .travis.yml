@@ -1,4 +1,16 @@
-before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-full latexmk chktex"
+os: linux
+
+language: r
+
+sudo: required
+
+apg_packages:
+  -texlive-recommended
+  -texlive-lang-german
+  -texlive-latex-extra
+  -latexmk
+
+
+
 script:
-- latexmk -pdflatex=lulatex *.tex
+  -latexmk -pdflatex=lualatex -pdf *.tex
