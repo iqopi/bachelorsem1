@@ -7,7 +7,7 @@ before_install:
 - "sudo apt-get update && sudo apt-get install texlive texlive-lang-german texlive-latex-extra latexmk"
 
 script:
-- latexmk - pdflatex=lualatex -pdf *.tex
+- latexmk -pdflatex=lualatex -pdf *.tex
 
 notifications:
   on_success: never
