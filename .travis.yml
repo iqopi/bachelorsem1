@@ -2,16 +2,11 @@ os: linux
 
 sudo: required
 
-apg_packages:
-  - texlive-recommended
-  - texlive-lang-german
-  - texlive-latex-extra
-  - latexmk
-
-
+before_install:
+  - "sudo apt-get update && sudo apt get install texlive-recommended texlive-lang-german texlive-latex-extra latexmk"
 
 script:
-  latexmk - pdflatex=lualatex -pdf *.tex
+  - latexmk - pdflatex=lualatex -pdf *.tex
 
 notifications:
   on_success: never
