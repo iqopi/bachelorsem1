@@ -1,16 +1,4 @@
 before_install:
-- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended texlive-german"
+- "sudo apt-get update && sudo apt-get install --no-install-recommends texlive-full latexmk chktex"
 script:
-- mkdir _build
-- pdflatex -output-directory _build tex/your_file_1.tex
-- pdflatex -output-directory _build tex/your_file_2.tex
-deploy:
-  provider: releases
-  api_key:
-    secure: [YOUR KEY]
-  file:
-  - _build/your_file_1.pdf
-  - _build/your_file_2.pdf
-  skip_cleanup: true
-  on:
-    tags: true
+- latexmk -pdflatex=lulatex *.tex
