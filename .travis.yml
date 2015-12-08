@@ -3,15 +3,15 @@ os: linux
 sudo: required
 
 apg_packages:
-  -texlive-recommended
-  -texlive-lang-german
-  -texlive-latex-extra
-  -latexmk
+  - texlive-recommended
+  - texlive-lang-german
+  - texlive-latex-extra
+  - latexmk
 
 
 
 script:
-  -latexmk -pdflatex=lualatex -pdf *.tex
+  latexmk - pdflatex=lualatex -pdf *.tex
 
 notifications:
   on_success: never
