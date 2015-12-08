@@ -14,3 +14,7 @@ apg_packages:
 
 script:
   -latexmk -pdflatex=lualatex -pdf *.tex
+
+notifications:
+  on_success: never
+  on_failure: never
